@@ -61,10 +61,11 @@
                     <option value="divorciado">Divorciado</option>
                     <option value="casado">União estável</option>
                 </select>
+                <br>
 
                 <label for="state">Estado</label>
-                <select name="userState" id="state">
-                    <option value="notInformed">Selecione...</option>
+                <select name="userState" id="state" required>
+                    <option>Selecione...</option>
                     <option value="acre">Acre</option>
                     <option value="alagoas">Alagoas</option>
                     <option value="amapa">Amapá</option>
@@ -93,7 +94,42 @@
                     <option value="sergipe">Sergipe</option>
                     <option value="tocantins">Tocantins</option>
                 </select>
+                <br>
+                <label for="city">Cidade</label>
+                <input type="text" name="userCity" id="city" required>
             </fieldset>
+
+            <!-- Hábitos -->
+             <fieldset>
+                <legend>Hábitos</legend>
+
+                <p>Redes sociais</p>
+                <input type="checkbox" name="socialMedia" id="instagram" value="instagram">
+                <label for="instagram">Instagram</label>
+                <br>
+                <input type="checkbox" name="socialMedia" id="facebook" value="facebook">
+                <label for="facebook">Facebook</label>
+                <br>
+                <input type="checkbox" name="socialMedia" id="linkedin" value="linkedin">
+                <label for="linkedin">Linkedin</label>
+                <br>
+                <input type="checkbox" name="socialMedia" id="x" value="x">
+                <label for="x">X</label>
+                <br>
+                <label for="musicStyle">Estilo Musical</label>
+                <input type="text" name="userMusicalStyle" id="musicStyle" list="styleTypes">
+                <datalist id="styleTypes">
+                    <option value="rock">
+                    <option value="samba">
+                    <option value="pop">
+                    <option value="sertanejo">
+                    <option value="funk">
+                </datalist>
+                <br>
+                <label for="color">Cor favorita</label>
+                <input type="color" name="userColor" id="color">
+             </fieldset>
+
             <button type="submit">aaa</button>
         </form>
     </section>
